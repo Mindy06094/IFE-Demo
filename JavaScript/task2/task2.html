@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <style type="text/css">
+      li{
+        list-style: none;
+      }
+    </style>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <label for="">请输入最低空气质量<input type="text" id="min"></label>
+  <input type="button" value="点击显示符合条件的城市" id="btn">
+  <ul id="aqi-list">
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+ var min=document.getElementById("min");
+ var btn=document.getElementById("btn");
+ var aqiUl=document.getElementById("aqi-list");
+ btn.onclick=function(){
+    aqiUl.innerHTML=null;
+    //对数组进行筛选，筛选出空气质量指数大于60的城市
+     var b=aqiData.filter(function(a) {
+       return a[1]>min.value;
+     });
+     //对得到的新数组进行排序，指数高的排在前面
+     b.sort(function(a,c){
+       return c[1]-a[1];
+     });
+     var number=["一","二","三","四","五","六"];
+     for(i=0;i<b.length;i++){
+       var li=document.createElement("li");//创建元素节点li
+       aqiUl.append(li);//用append插入消息
+       li.innerHTML="第"+number[i]+"名:"+b[i];
+     }
+ };
+ 
+  
+})();
+
+</script>
+</body>
+</html>

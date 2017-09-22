@@ -1,0 +1,63 @@
+.father{
+	background-color: #eee;
+	padding: 20px;
+	border: 1px #999 solid;
+	height: auto;
+	/*overflow: auto;*/
+}
+.father:after{
+	content: "";
+	height: 0px;
+	display: block;
+	clear: both;
+}
+.son_left{
+	background-color: #fff;
+	border: 1px #999 solid;
+	width: 200px;
+	float: left;
+	padding: 20px;
+	height: 100%;
+
+}
+.son_left .team_logo{
+	width: 80px;
+	height: 80px;
+	display: table-cell;
+	vertical-align: middle;
+	float: left;
+}
+.son_left .team_name{
+	vertical-align: top;
+	padding-left:20px; 
+}
+.son_middle{
+	background-color: #fff;
+	border: 1px #999 solid;
+	padding: 20px;
+	height: auto;
+	margin: 0px 180px 0px 260px;
+}
+.son_right{
+	background-color: #fff;
+	border: 1px #999 solid;
+	width: 120px;
+	float: right;
+	padding: 20px;
+	height: auto;
+}
+.son_right .person_logo{
+	width: 80px;
+	height: 80px;
+	padding-bottom: 20px;
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0px auto;
+}
+.son_right .person_logo_fourth{
+	width: 80px;
+	height: 80px;
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0px auto;
+}

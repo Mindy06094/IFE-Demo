@@ -1,0 +1,254 @@
+/*reste*/
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea,label,ul,li,table{
+	margin: 0;
+	padding: 0;
+	font-family: "Arial","黑体";
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+button{
+	border-style: none;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+}
+*{
+	box-sizing: border-box;
+}
+/*reset样式结束*/
+
+header{
+	width: 100%;
+	height: 6rem;
+	text-align: center;
+	background-color: #91D4DA;
+}
+header button{
+	position: absolute;
+	left: 2rem;
+	padding: 0;
+	font-family: 微软雅黑;
+	color: #fff;
+	font-size: 2.8rem;
+	background-color: #91D4DA;
+	margin-left: 2.4rem;
+	cursor: pointer;
+	line-height: 6rem;
+}
+header button:before{
+	content: "";
+	width: 36px;
+	height: 59px;
+	background: url('images/back.jpg') no-repeat;
+	display: block;
+	position: absolute;
+	top: 1.2rem;
+    left: -3rem;
+}
+header h1{
+	font-weight: normal;
+	color: #fff;
+	font-size: 2.8rem;
+	line-height: 6rem;
+	display: inline-block;
+}
+nav{
+	background-color: #fff;
+}
+nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+nav li{
+	display: flex;
+	justify-content: center;
+	width: 20%;
+	padding: 2.5% 0;
+}
+nav li:hover{
+	border-bottom: 8px solid #91D4DA;
+}
+nav li a{
+	color: #666;
+	font-size: 2.4rem;
+	text-align: center;
+}
+figure{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+figure img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+section{
+	margin: 0 0 2% 0;
+	width: 100%;
+	background-color: #fff;
+}
+section .tags{
+	width: 95%;
+	margin: 0 auto;
+	padding: 2.4rem 0;
+	border-bottom: 3px solid #dedede;
+}
+section .tags td{
+	height: 12rem;
+	font-size: 2rem;
+	color: #2f2f2f;
+	text-align: center;
+	vertical-align: bottom;
+	background: url('images/biaoqian.png') center 0 no-repeat;
+}
+section .columns{
+	width: 95%;
+	margin: 0 auto;
+	padding: 2.5% 0;
+	background-color: #fff;
+}
+section .columns td{
+	height: 20rem;
+	font-size: 2.8rem;
+	color: #2f2f2f;
+	text-align: center;
+	vertical-align: bottom;
+}
+.columns td:first-child{
+	border-right: 3px solid #dedede;
+	background: url('images/bear-column-1.png') center 0 no-repeat;
+}
+.columns td:nth-child(2){
+	border-right: 3px solid #dedede;
+	background: url('images/bear-column-2.png') center 0 no-repeat;
+}
+.columns td:nth-child(3){
+	background: url('images/bear-column-3.png') center 0 no-repeat;
+}
+.columns td span{
+	color: #5b5b5b;
+	font-size: 2.5rem;
+}
+article .mode{
+	background-color: #fff;
+	margin: 0 0 2% 0;
+	padding: 2.5% 2%;
+}
+article .mode h1{
+	color: #696969;
+	font-size: 2.8rem;
+	font-weight: normal;
+}
+article .mode hr{
+	height: 3px;
+	margin-top: 1.5rem;
+	border-style: none;
+	background-color: #dedede;
+}
+.mode table{
+	width: 100%;
+	margin-top: 1.5rem;
+}
+.mode table td{
+	font-size: 2.2rem;
+	color: #565656;
+	text-align: center;
+	padding: 10px;
+}
+.mode table td p{
+	background-color: #f8f8f8;
+	width: 99%;
+    height: 5.2rem;
+    text-align: center;
+    line-height: 5.2rem;
+    margin: 0 auto;
+}
+.mode table .img{
+	width: 14rem;
+}
+.mode table .img img{
+	border: 2px solid #fbb22f;
+	height: 12rem;
+	vertical-align: middle;
+}
+article .content_1{
+	background-color: #fff;
+	position: relative;
+	padding: 2rem 2rem 2rem 21rem;
+}
+article .content_2{
+	background-color: #fff;
+	position: relative;
+	padding: 2rem 2rem 2rem 21rem;
+}
+article [class*=content_] h2{
+	color: #676767;
+	font-size: 2.5rem;
+}
+article .content_1 h2{
+	height: 10rem;
+}
+article .content_2 h2{
+	height: 10rem;
+}
+article [class*=content_] span{
+	color: #c5c5c5;
+	font-size: 2rem;
+}
+/*article .content_1 span{
+	margin-top: 6.2rem;
+    display: block;
+}
+article .content_2 span{
+	margin-top: 6.2rem;
+    display: block;
+}*/
+article hr{
+	height: 3px;
+	background-color: #f2f2f2;
+	border-style: none;
+	margin: 0;
+}
+article .content_1:before{
+	content: "";
+	width: 277px;
+	height: 197px;
+	display: block;
+	background: url('images/bear-article.png') no-repeat;
+	position: absolute;
+	margin-left: -19rem;
+}
+article .content_2:before{
+	content: "";
+	width: 277px;
+	height: 197px;
+	display: block;
+	background: url('images/bear-article.png') no-repeat;
+	position: absolute;
+	margin-left: -19rem;
+}
+article .content_3{
+	background-color: #fff;
+	padding: 1.5rem 2rem;
+}
+#three_bears{
+	display: flex;
+	justify-content: space-between;
+	margin: 1.5rem 0;
+}
+article .content_3 span{
+	display: block;
+}
+footer{
+	width: 100%;
+	height: 10rem;
+}
+

@@ -1,0 +1,28 @@
+html{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.item{
+	height: 200px;
+	width: 400px;
+	background: #ccc;
+	display: flex;
+	justify-content: space-between;
+}
+.item_left{
+	height: 50px;
+	width: 50px;
+	background: #fc0;
+	border-bottom-right-radius: 50px;
+	align-self: flex-start;
+}
+.item_right{
+	height: 50px;
+	width: 50px;
+	background: #fc0;
+	border-top-left-radius: 50px;
+	align-self: flex-end;
+}

@@ -1,0 +1,87 @@
+/*reset样式*/
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea,label,ul,li,table{
+	margin: 0;
+	padding: 0;
+	font-family: "Arial","黑体";
+}
+table{
+	margin: 20px auto;
+	background-color: #fff;
+	font-size: 15px;
+}
+table tr:nth-child(2n-1) td{
+background-color: #ccc;
+}
+table th{
+	background-color: #000;
+	color: #fff;
+	font-weight: normal;
+}
+table tr:nth-child(-n+4) td{
+	color: #f00;
+}
+input{
+	width: 90px;
+    border: 1px solid #e0dbdb;
+	display: block;
+	margin: 20px auto;
+	transition: width 2s;
+	-webkit-transition: width 2s;
+	-o-transition: width 2s;
+}
+input:focus{
+	width: 150px;
+	border: 2px solid #00f;
+	box-shadow: 0 0 2px #00f;
+}
+.container{
+	width: 1000px;
+	margin: 20px auto;
+}
+.box_big{
+	width: 180px;
+    height: 100px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.box_big #slide_1{
+	display: inline-block;
+	background-color: green;
+	width: 180px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+.box_big #slide_2{
+	display: inline-block;
+	background-color: red;
+	width: 180px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+.box_big #slide_3{
+	display: inline-block;
+	background-color: yellow;
+	width: 180px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+.box_small{
+	margin: -40px auto;
+    text-align: right;
+    width: 180px;
+}
+.box_small a{
+	text-align: center;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #fff;
+	text-decoration: none;
+	margin-left: 5px;
+}
